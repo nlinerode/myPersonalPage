@@ -1,0 +1,312 @@
+html {
+    overflow-y: scroll;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Slabo 27px", "Roboto Mono", serif, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+}
+
+
+/* Global */
+
+#main-wrapper {
+    min-height: 100%;
+    margin-bottom: -20px;
+}
+
+#main-wrapper:after {
+    content: "";
+    display: block;
+}
+
+#main-wrapper:after,
+footer {
+    height: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.first-letter::first-letter {
+    font-size: 21px;
+}
+
+.info-page {
+    line-height: 1.25;
+}
+
+
+/* Header */
+
+header {
+    background-color: #363636;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 60px;
+    border-bottom: #000 solid 4px;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: auto;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+
+#header-logo {
+    float: left;
+    padding: 30px;
+    min-height: 70px;
+}
+
+header #header-logo h1 {
+    margin-top: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 55px;
+}
+
+header .highlight {
+    color: #006a25;
+    font-size: 47px;
+    vertical-align: sub;
+}
+
+header #logo-2 {}
+
+header .current {
+    color: #006a25;
+    font-weight: bold;
+}
+
+header li:hover {
+    color: #00772a;
+    font-weight: bolder;
+}
+
+header li:focus {
+    color: #00b540;
+}
+
+
+/* Picture Background Area */
+
+#guitar-background-case {
+    min-height: 400px;
+    background: url('http://lorempixel.com/1920/1080/nature') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: auto;
+    border-bottom: #000 solid 4px;
+}
+
+#guitar-background-case h1 {
+    margin-top: 140px;
+    font-size: 45px;
+}
+
+#guitar-background-case p {
+    font-size: 18px
+}
+
+
+/* Boxes */
+
+#boxes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 46%;
+    padding: 10px;
+    margin: 8px;
+    border: #000 solid 3px;
+    background-color: #696969;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#boxes .box img {
+    width: 150px;
+}
+
+
+/* Contact Info Sidebar */
+
+aside#sidebar {
+    float: right;
+    width: 15%;
+    margin-top: 30px;
+    border: #000 solid 3px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #696969;
+    color: #fff;
+    overflow: auto;
+}
+
+aside h3 {
+    margin: 0;
+}
+
+aside a {
+    text-decoration: none;
+    color: inherit;
+}
+
+aside #highlighter {
+    color: #006a25;
+    text-decoration: underline;
+}
+
+
+/* Contact Form*/
+
+div#contact-form {
+    //border: 3px solid #006a25;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border: 2px solid #006a25;
+    background-color: #696969;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    overflow: auto;
+}
+
+textarea:focus {
+    border: 2px solid #006a25;
+    background-color: #696969;
+    color: #fff;
+}
+
+button[type="submit"] {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #696969;
+    color: #fff;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+button[type="submit"]:hover {
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .4)
+}
+
+button[type="submit"]:active {
+    background-color: #006a25;
+    color: #fff;
+    transition: .15s;
+}
+
+
+/* Placeholder Focus*/
+
+input:focus::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input:focus::-moz-placeholder {
+    color: #fff;
+}
+
+input:focus::-ms-input-placeholder {
+    color: #fff;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+/* Main Column */
+
+article#main-col {
+    float: left;
+    width: 75%;
+    margin-top: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    //height: 20px;
+    //margin-top: 20px;
+    background-color: #363636;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-top: #000 solid 4px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a#top-link {
+    float: right;
+}
